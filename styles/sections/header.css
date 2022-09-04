@@ -247,7 +247,7 @@
  animation-fill-mode: forwards;
  animation-delay: 0.5s;
  animation-play-state: paused;
- will-change: contents, width;
+ will-change: auto;
 }
 
 .logo-mb-content .header-mb-logo {
