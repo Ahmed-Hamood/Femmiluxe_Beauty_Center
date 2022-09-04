@@ -231,6 +231,7 @@
 /* -------------------  */
 
 .header-mb-content .logo-mb-content {
+ position: relative;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -240,7 +241,7 @@
  border-top: none;
  border-bottom: none;
  margin-top: 12px;
-/*  transition: 0.4s all; */
+ transition: 0.4s all; 
 
  animation-name: MobileLogoWidth;
  animation-duration: 0.7s;
