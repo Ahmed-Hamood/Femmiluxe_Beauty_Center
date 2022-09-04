@@ -1,0 +1,96 @@
+@keyframes fadeAnimation {
+ 0% {
+  opacity: 0;
+ }
+ 100% {
+  opacity: 1;
+ }
+}
+
+@keyframes mainLogo {
+ 0% {
+  transform: translateX(50px);
+ }
+ 100% {
+  opacity: 1;
+  transform: translateX(0);
+ }
+}
+
+@keyframes MobileLogoWidth {
+ 0% {
+  width: 0;
+ }
+ 100% {
+  width: 150px;
+ }
+}
+
+@keyframes MobileLogoImg {
+ 0% {
+  opacity: 0;
+ }
+ 100% {
+  opacity: 1;
+ }
+}
+
+@keyframes MobileLogoTitle1 {
+ 0% {
+  transform: translateY(-20px);
+
+  opacity: 0;
+ }
+ 100% {
+  transform: translateY(0);
+
+  opacity: 1;
+ }
+}
+
+@keyframes MobileLogoTitle2 {
+ 0% {
+  transform: translateY(20px);
+  opacity: 0;
+ }
+ 100% {
+  transform: translateY(0);
+  opacity: 1;
+ }
+}
+
+@keyframes socialGroupMobileAnimation {
+ 0% {
+  right: -100px;
+ }
+ 100% {
+  right: -8px;
+ }
+}
+
+@keyframes landPageLeftSection {
+ 0% {
+  opacity: 0;
+  transform: translateX(-50px);
+ }
+ 50% {
+  opacity: 0.5;
+ }
+ 100% {
+  opacity: 1;
+  transform: translateX(0);
+ }
+}
+@keyframes landPageRightSection {
+ 0% {
+  opacity: 0;
+  transform: translateX(50px);
+ }
+ 50% {
+  opacity: 0.5;
+ }
+ 100% {
+  opacity: 1;
+  transform: translateX(0);
+ }
+}
