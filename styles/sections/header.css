@@ -539,7 +539,7 @@
   animation-name: socialGroupMobileAnimation;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
-  animation-delay: 3s;
+  animation-delay: 3.5s;
   animation-play-state: paused;
   will-change: auto;
  }
