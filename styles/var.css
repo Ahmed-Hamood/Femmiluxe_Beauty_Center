@@ -1,0 +1,21 @@
+html {
+ --main-color: #eec855;
+ --logo-border-color: #eec855;
+ --section-width: 850px;
+
+ --title-underline: #ecb71772;
+ --section-top-margin: 14px;
+
+ --header-height: 190px;
+}
+
+@media screen and (max-width: 850px) {
+ html {
+  --header-height: 358px;
+ }
+}
+@media screen and (max-width: 550px) {
+ html {
+  --header-height: 125px;
+ }
+}
