@@ -246,7 +246,6 @@
  animation-duration: 0.7s;
  animation-fill-mode: forwards;
  animation-delay: 0.5s;
- animation-timing-function: cubic-bezier(0.46, 0.27, 0, 1.01);
  animation-play-state: paused;
  will-change: contents, width;
 }
