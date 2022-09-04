@@ -541,7 +541,7 @@
   animation-fill-mode: forwards;
   animation-delay: 2.5s;
   animation-play-state: paused;
-  will-change: right;
+  will-change: auto;
  }
  .header-container .header-content {
   display: none;
