@@ -1,0 +1,88 @@
+.aboutUs-container {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 12px;
+}
+
+.section-title {
+ font-size: 1.5rem;
+ position: relative;
+ padding-top: 22px;
+ padding-bottom: 10px;
+ font-weight: 400;
+ text-align: center;
+ border-bottom: 1px solid var(--title-underline);
+ max-width: 300px;
+ width: 100%;
+}
+
+.aboutUs-container .aboutUs-section-content {
+ max-width: var(--section-width);
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin: 22px 12px;
+}
+
+.aboutUs-section-content .aboutUs-upper-content {
+ display: flex;
+ align-items: flex-start;
+ max-width: 800px;
+ width: 100%;
+}
+
+.aboutUs-section-content .aboutUs-upper-content .aboutUs-logo-image-content {
+ width: 150px;
+ height: 185px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.aboutUs-text-content p {
+ font-size: 1.2rem;
+ text-align: center;
+ font-weight: 200;
+ line-height: 1.8;
+ padding: 0 12px;
+}
+
+.aboutUs-section-content .aboutUs-bottom-content {
+ margin: auto;
+ margin-top: 1.5rem;
+ max-width: 720px;
+ width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+ .aboutUs-section-content .aboutUs-upper-content {
+  /* align-items: center;
+  flex-wrap: wrap;*/
+  justify-content: center;
+  padding: 0 44px;
+ }
+
+ .aboutUs-section-content .aboutUs-upper-content .aboutUs-logo-image-content {
+  /* margin-bottom: 22px; */
+ }
+}
+
+@media screen and (max-width: 550px) {
+ .aboutUs-section-content .aboutUs-upper-content {
+  align-items: center;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+
+ .aboutUs-section-content .aboutUs-upper-content .aboutUs-logo-image-content {
+  height: 150px;
+  margin-bottom: 18px;
+ }
+ .aboutUs-upper-content .aboutUs-logo-image-content .aboutUs-logo-image {
+  width: 200px;
+ }
+}
