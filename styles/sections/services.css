@@ -1,0 +1,200 @@
+.services-container {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: var(--section-top-margin);
+}
+
+.services-container .services-section-content {
+ max-width: var(--section-width);
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ margin: 33px 12px;
+ padding: 3px 8px;
+ column-gap: 12px;
+}
+
+.services-section-content .service-type-content .service-type-img-content,
+.services-section-content .service-type-content .service-type-img-content .service-type-img {
+ width: 180px;
+ height: 185px;
+}
+
+.services-section-content .service-type-content .service-type-img-content .service-type-img {
+ border-radius: 70px 0px 70px 0px;
+ border: 5px solid rgba(255, 221, 0, 0.698);
+}
+
+.services-section-content .service-type-content .service-type-title {
+ font-size: 1.4rem;
+ font-weight: 200;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 50px;
+ border: 1px solid rgb(185, 166, 0);
+ border-radius: 20px 0 0 0;
+ margin: 12px 0;
+}
+
+.services-section-content .service-type-content .service-type-link {
+ position: relative;
+ background: var(--main-color);
+ color: #2f2300;
+ font-size: 1.1rem;
+ font-weight: 500;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 50px;
+ border: 1px solid #503b00;
+ border-bottom: 5px solid #7e5d01;
+ transition: 0.3s all;
+}
+
+.services-section-content .service-type-content .service-type-link:hover {
+ color: #b79426;
+ background: #00000000;
+}
+
+.services-section-content .service-type-content .service-type-link::after {
+ content: "View Service";
+ position: absolute;
+}
+
+.services-section-content .service-type-content .service-type-link.active {
+ cursor: default;
+ background: rgba(0, 0, 0, 0);
+}
+.services-section-content .service-type-content .service-type-link.active::after {
+ content: "";
+ display: inline-block;
+ background-repeat: no-repeat;
+ background-size: contain;
+ image-rendering: pixelated;
+ -webkit-background-size: contain;
+ background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 26 19' fill='%238B6700' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.9904 18.75L1.45412e-05 2.23517e-06L25.9808 2.23517e-06L12.9904 18.75Z' /%3E%3C/svg%3E%0A");
+ padding: 12px;
+ position: absolute;
+ bottom: 5px;
+}
+
+/* ###################### */
+/* service description */
+/* ###################### */
+
+.services-container .services-description-section-content {
+ max-width: 800px;
+ width: 100%;
+ padding-top: 22px;
+ margin-bottom: 28px;
+ display: none;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ animation: fadeAnimation 0.5s;
+}
+
+.services-container .services-description-section-content .service-desc-title {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 1.4rem;
+ border: 1px solid;
+ padding: 18px 55px;
+}
+
+.services-container .services-description-section-content .hairCare-service-desc-content {
+ display: flex;
+ justify-content: space-around;
+ width: 100%;
+ margin-top: 33px;
+ text-align: center;
+ display: flex;
+ justify-content: center;
+}
+
+.services-container .services-description-section-content .hairCare-service-desc-content .service-des-col {
+ font-size: 1.2rem;
+ font-weight: 400;
+ line-height: 2;
+ width: 200px;
+ border-right: 1px dotted rgba(227, 182, 0, 0.325);
+ text-align: center;
+ padding: 0 22px;
+}
+
+.services-container .services-description-section-content .hairCare-service-desc-content .service-des-col:last-child {
+ border: none;
+}
+
+/* ###################### */
+
+@media screen and (max-width: 850px) {
+ .services-container .services-section-content {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  column-gap: 80px;
+  row-gap: 40px;
+ }
+}
+
+@media screen and (max-width: 550px) {
+ .services-container .services-section-content {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  column-gap: 35px;
+ }
+
+ .services-section-content .service-type-content {
+  max-width: 150px;
+  width: 100%;
+ }
+
+ .services-section-content .service-type-content .service-type-img-content,
+ .services-section-content .service-type-content .service-type-img-content .service-type-img {
+  width: 150px;
+  /* max-width: 150px;
+  width: 100%; */
+  height: 150px;
+ }
+
+ .services-container .services-description-section-content .hairCare-service-desc-content .service-des-col {
+  font-size: 1.2rem;
+ }
+}
+
+@media screen and (max-width: 360px) {
+ .services-container .services-section-content {
+  grid-template-columns: auto;
+ }
+
+ .services-section-content .service-type-content {
+  max-width: 200px;
+  width: 100%;
+ }
+
+ .services-section-content .service-type-content .service-type-img-content,
+ .services-section-content .service-type-content .service-type-img-content .service-type-img {
+  max-width: 200px;
+  width: 100%;
+  height: 220px;
+ }
+
+ .services-container .services-description-section-content .hairCare-service-desc-content {
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .services-container .services-description-section-content .hairCare-service-desc-content .service-des-col {
+  border: none;
+  border-bottom: 1px dotted rgba(227, 182, 0, 0.325);
+  padding: 12px 0;
+ }
+}
