@@ -1,0 +1,164 @@
+.contactInfo-Location-container {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: var(--section-top-margin);
+}
+
+.contactInfo-Location-container .contactInfo-Location-section-content {
+ max-width: var(--section-width);
+ width: 100%;
+ display: flex;
+ justify-content: space-evenly;
+ margin-top: 33px;
+ margin-bottom: 44px;
+}
+
+.contactInfo-Location-section-content .contactInfo-left-section-content {
+ max-width: 350px;
+ width: 90%;
+}
+
+.contactInfo-Location-section-content .Location-right-section-content {
+ max-width: 350px;
+ width: 90%;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+}
+
+.contactInfo-Location-section-content .contactInfo-left-section-content .contact-info-content {
+ display: flex;
+ width: 100%;
+ height: 60px;
+ margin-bottom: 12px;
+}
+
+.contact-info-content .contact-svg-content {
+ padding: 12px 22px;
+ border: 1px solid;
+ width: 57px;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.contact-svg-content .contactInfo-svg-style {
+ padding: 15px;
+ cursor: default;
+}
+
+.contact-info-content .contact-info-text-content,
+.contact-info-bookNow-contact {
+ font-size: 1.3rem;
+ border: 1px solid;
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+}
+
+.contact-info-content .contact-info-text-content {
+ height: 100%;
+ margin-left: 6px;
+ display: flex;
+}
+.contact-info-bookNow-contact {
+ font-weight: 500;
+ height: 55px;
+ display: flex;
+}
+
+.contact-info-content .contact-info-text-content.link:hover,
+.contact-info-bookNow-contact:hover {
+ color: rgb(28, 26, 26);
+}
+
+/* Location Map Right section  */
+
+.Location-right-section-content .LocationMap-content {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 100%;
+ height: 180px;
+ position: relative;
+}
+
+.Location-right-section-content .LocationMap-content img {
+ max-width: 350px;
+ width: 85%;
+ height: 100%;
+ border: 1px solid;
+ border-radius: 12px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.Location-right-section-content .LocationMap-content .LocationMap-btn-content {
+ font-size: 1rem;
+ position: relative;
+ bottom: 112px;
+ border: 1px solid;
+ border-radius: 6px;
+ width: 180px;
+ padding: 12px 8px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: 0.4s all;
+}
+
+.LocationMap-btn-content .map-svg-style {
+ padding: 12px;
+ margin-right: 12px;
+ transition: 0.4s all;
+}
+
+.LocationMap-btn-content:hover .map-svg-style {
+ background-image: url("data:image/svg+xml,%3Csvg width='29' height='27' viewBox='0 0 29 27' fill='%23353b48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.4485 0.761047C10.9662 0.761047 8.14338 3.58385 8.14338 7.06619C8.14338 9.88149 12.2642 15.0127 13.843 16.8752C14.1628 17.2525 14.7348 17.2525 15.054 16.8752C16.6328 15.0127 20.7537 9.88149 20.7537 7.06619C20.7537 3.58385 17.9309 0.761047 14.4485 0.761047V0.761047ZM14.4485 9.16791C13.2876 9.16791 12.3468 8.22714 12.3468 7.06619C12.3468 5.90525 13.2876 4.96448 14.4485 4.96448C15.6095 4.96448 16.5502 5.90525 16.5502 7.06619C16.5502 8.22714 15.6095 9.16791 14.4485 9.16791ZM1.04358 11.5674C0.746427 11.6862 0.491695 11.8914 0.312238 12.1564C0.132781 12.4214 0.0368296 12.734 0.0367584 13.0541L0.0367584 25.5803C0.0367584 26.1468 0.608725 26.5341 1.13465 26.3239L8.04329 23.1793V11.5158C7.60093 10.7162 7.23914 9.93754 6.97993 9.19293L1.04358 11.5674ZM14.4485 18.7592C13.7444 18.7592 13.0784 18.45 12.6215 17.9105C11.6377 16.7496 10.5914 15.4275 9.6446 14.0714V23.1788L19.2524 26.3815V14.0719C18.3057 15.4275 17.2598 16.7501 16.2755 17.911C15.8186 18.45 15.1526 18.7592 14.4485 18.7592ZM27.7624 8.82563L20.8538 11.9702V26.382L27.8535 23.5822C28.1507 23.4634 28.4054 23.2582 28.5849 22.9932C28.7644 22.7282 28.8603 22.4155 28.8603 22.0955V9.56924C28.8603 9.00278 28.2883 8.61546 27.7624 8.82563Z' /%3E%3C/svg%3E%0A") !important;
+}
+
+.Location-right-section-content .LocationMap-content .LocationMap-btn-content:hover {
+ background: var(--main-color);
+ color: #151619;
+}
+
+.Location-right-section-content .address-text-content {
+ display: flex;
+ align-items: flex-start;
+ margin-top: 22px;
+}
+
+.Location-right-section-content .address-text-content p {
+ font-size: 1rem;
+ font-weight: 400;
+ line-height: 1.7;
+ margin-left: 8px;
+}
+
+.address-text-content .location-svg-style {
+ padding: 16px;
+ cursor: default;
+}
+
+@media screen and (max-width: 900px) {
+ .contactInfo-Location-container .contactInfo-Location-section-content {
+  flex-direction: column;
+  align-items: center;
+ }
+ .contactInfo-Location-section-content .Location-right-section-content {
+  margin-top: 33px;
+ }
+}
+
+@media screen and (max-width: 550px) {
+ .contactInfo-Location-section-content .contactInfo-left-section-content .contact-info-content {
+  height: 50px;
+ }
+ .contact-svg-content .contactInfo-svg-style {
+  padding: 12px;
+ }
+}
