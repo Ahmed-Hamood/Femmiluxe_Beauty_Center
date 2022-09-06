@@ -163,7 +163,7 @@ function mobile_header_shrink() {
   event => {
    HorPos = event.target.scrollTop
    if (window.innerWidth < 550) {
-    if (HorPos >= 350) {
+    if (HorPos >= 330) {
      main_header_container.style["height"] = "90px"
      logo.style["height"] = "65px"
      logo.children[0].style["width"] = "90px"
